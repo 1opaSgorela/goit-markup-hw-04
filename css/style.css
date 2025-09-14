@@ -139,12 +139,12 @@ a {
     text-align: center;
     background-color: #2E2F42;
     color: #FFFFFF;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .big-banner-container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
+ 
 }
 
 .big-banner-text {
