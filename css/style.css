@@ -256,6 +256,7 @@ a {
     display: flex;
     gap: 24px;
     margin-top: 8px;
+    justify-content: center;
 }
 .social-links .link{
     display: flex;
@@ -269,6 +270,9 @@ a {
     fill: #f4f4fd;
 }
 .social-links .link:hover{
+    background-color: #404BBF;
+}
+.social-links .link:focus {
     background-color: #404BBF;
 }
 .our-team-people-name {
@@ -295,35 +299,52 @@ a {
     column-gap: 24px;
     row-gap: 48px;
 }
-.img-block{
-    position: relative;
-    overflow: hidden;
-}
-.overlay-out-portfolio{
-    padding: 40px 32px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    background-color: #4D5AE5;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #F4F4FD;
-}
+
 .our-portfolio-card {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-portfolio-card:hover .overlay-out-portfolio{
+.our-portfolio-card:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.img-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-out-portfolio {
+    position: absolute;
+    /* 🔹 виправлено (було relative) */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-card:hover .overlay-content {
     transform: translateY(0);
 }
-.our-portfolio-card:hover{
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .our-portfolio-card-content {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -356,7 +377,6 @@ a {
     line-height: 1.5;
     margin: 0;
 }
-
 .footer-page {
     display: flex;
     justify-content: space-between;
