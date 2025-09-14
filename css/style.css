@@ -255,7 +255,7 @@ a {
 .social-links{
     display: flex;
     gap: 24px;
-    margin-bottom: 32px;
+    margin-top: 8px;
 }
 .social-links .link{
     display: flex;
