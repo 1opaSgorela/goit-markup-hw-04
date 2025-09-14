@@ -405,17 +405,20 @@ a {
 
 .content-footer {
     display: flex;
-    gap: 120px;
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+    align-items: baseline;
 }
 
 .social-media-block {
     display: flex;
     flex-direction: column;
+   
 }
-
+.logo-block{
+    margin-right: 120px;
+}
 .social-text {
     font-weight: 500;
     font-size: 16px;
@@ -425,7 +428,7 @@ a {
     margin-bottom: 16px;
 }
 
-.social-links-footer {
+.social-list-footer {
     display: flex;
     gap: 16px;
     list-style: none;
@@ -433,7 +436,7 @@ a {
     margin: 0;
 }
 
-.social-links-footer li {
+.social-link-footer {
     width: 40px;
     height: 40px;
 }
@@ -455,5 +458,5 @@ a {
 }
 
 .social-icon {
-    fill: var(#f4f4fd);
+    fill: #f4f4fd;
 }
