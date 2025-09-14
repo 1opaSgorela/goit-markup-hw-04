@@ -139,9 +139,13 @@ a {
     text-align: center;
     background-color: #2E2F42;
     color: #FFFFFF;
-    max-width: 1440px;
 }
+.big-banner-title .container {
+    max-width: 1440px;
 
+    margin: 0 auto;
+
+}
 .big-banner-title-text {
     max-width: 496px;
     margin: 0 auto 48px;
