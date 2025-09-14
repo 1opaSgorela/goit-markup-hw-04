@@ -191,18 +191,16 @@ a {
     display: flex;
     gap: 24px;
 }
-.our-goals-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-}
+
 .icon-block{
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    padding: 24px 100px;
-    margin-bottom: 8px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
 }
 .our-goals-item {
     flex-basis: calc((100% - 72px) / 4);
