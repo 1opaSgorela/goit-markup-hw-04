@@ -128,7 +128,7 @@ a {
     color: #404BBF;
 }
 
-.big-banner-title {
+.big-banner {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,7 +147,7 @@ a {
     padding: 0 20px;
 }
 
-.big-banner-title-text {
+.big-banner-text {
     max-width: 496px;
     margin: 0 auto 48px;
     font-size: 56px;
@@ -156,7 +156,7 @@ a {
     color: #FFFFFF;
 }
 
-.big-banner-title-btn {
+.big-banner-btn {
     display: block;
     margin: 0 auto;
     min-width: 169px;
@@ -172,8 +172,8 @@ a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.big-banner-title-btn:hover,
-.big-banner-title-btn:focus {
+.big-banner-btn:hover,
+.big-banner-btn:focus {
     background-color: #404BBF;
 }
 
